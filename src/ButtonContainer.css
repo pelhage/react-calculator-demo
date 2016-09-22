@@ -1,0 +1,6 @@
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80%;
+}

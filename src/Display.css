@@ -1,0 +1,12 @@
+.Display {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  padding: 15px;
+  font-family: monospace;
+  font-size: 10vh;
+  background: #ccc;
+  color: #202020;
+  flex-direction: row-reverse;
+  white-space: nowrap;
+}

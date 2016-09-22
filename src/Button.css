@@ -1,0 +1,35 @@
+.Button {
+  display: flex;
+  width: 25%;
+  font-size: 7vh;
+  border: 1px solid #4F9FC6;
+  align-items: center;
+  justify-content: center;
+  background: #58B1DD;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Button:active, .Button:hover {
+  background: #4F9FC6;
+  transition: 0.3s;
+}
+
+.half {
+  width: 50%
+}
+.three-quarts {
+  width: 75%;
+}
+.operate {
+  background: #7FA84A;
+  border: 1px solid #597d2a;
+}
+
+.operate:active, .operate:hover {
+  background: #597d2a;
+  transition: 0.3s;
+}
+.full {
+  width: 100%;
+}
