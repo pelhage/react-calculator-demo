@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Calculator.css';
-import Display from './Display'
-import ButtonContainer from './ButtonContainer'
+import Display from '../Display'
+import ButtonContainer from '../ButtonContainer'
 
 class Calculator extends Component {
   constructor(props) {
@@ -13,8 +13,6 @@ class Calculator extends Component {
   }
 
   handleButtonClick(value) {
-    let currentComputation = this.state.computationString
-
     if (value === 'Clear') {
       this.setState({ computationString: '' })
     } else {
@@ -41,15 +39,11 @@ class Calculator extends Component {
       } else {
         return currentComputation.slice(0, -1) + value
       }
-    }
-    // If previous input is not operator, then lets evaluate
-    else if (value === '=') {
+    } else if (value === '=') {  // If previous input is not operator, then lets evaluate
       return eval(currentComputation)
-    }
-    else if (currentComputation === 'Infinity') {
+    } else if (currentComputation === 'Infinity') {
       return currentComputation
-    }
-    else {
+    } else {
       return currentComputation + value
     }
   }
@@ -64,4 +58,4 @@ class Calculator extends Component {
   }
 }
 
-export default Calculator;
+export default Calculator
